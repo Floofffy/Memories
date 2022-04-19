@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+
+/* ---------- B A S E  D E S I G N  B O D Y ---------- */
+
+.sheet-bgwrapper {
+/* --- B A C K G R O U N D --- */
+	background-image: url("https://user-images.githubusercontent.com/83821429/157696823-5d1a4a6e-28a8-44cb-8e3f-5c3e5e31e516.png");
+	background-color: white;
+	border: solid white;
+	padding: 2%;
+}
+
+
+.sheet-header {
+/* --- H E A D E R ---*/
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    display: inline-flex;
+    flex: 0;
+    width: 200px;
+}
+
+
+.sheet-col {
+/* --- B A S I C S --- */
+	text-align: center;	
+	padding: 5%;
+	color: white;
+}
+
+
+.sheet-maintable {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.sheet-maintable .sheet-flex {
+	flex: 1;
+	text-align:center;
+	color: white;
+}
+
+.sheet-maintable .sheet-col {
+	display: inline-block;
+    vertical-align: top;
+    color: white;
+}
+
+.sheet-text,
+.sheet-maintable label {
+	font-family: "Cinzel";
+	color: white
+}
+
+
+.sheet-skillnum {
+    /* --- GONE --- */
+    color: white;
+	width: 3em !important;
+}
+.sheet-flexcontainer {
+    /* --- WHAT DIS?! --- */
+	display: flex
+	background-color: #FFF;
+}
+.sheet-flex {
+	flex: 1;
+	color: white
+}
+
+
+p,
+.sheet-rolls label,
+.sheet-name label,
+.sheet-species label {
+/* ----- M A I N  S H E E T ----- */
+	font-family: "Cinzel";
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;	
+	margin-bottom: 0px;
+	font-size: 20px;
+	color: white;
+	width: auto;
+	margin-top: auto;
+	height: 20px;
+	font-weight: bold;
+}
+/* INVENTAR */
+.sheet-row p,
+.sheet-col p,
+.sheet-maintable .sheet-flex p,
+.sheet-maintable .sheet-flex p {
+	border-bottom: 1px solid white;
+	padding: 0px 8px 1px 8px;
+	margin-bottom: 4px;
+	color: #FFF;
+}
+
+
+.sheet-center {
+	text-align:center;
+	color: white
+}
+.sheet-spacertop {
+	margin-top: 25px;
+	color: white
+}
+.sheet-fullwidth {
+	width: 100%;
+	color: white
+}
+.sheet-bold {
+	font-weight: bold;
+	color: white
+}
+
+.repcontrol_add,
+.repcontrol_edit,
+.sheet-addbutton,
+.sheet-rollbuttons {
+	background: url("http://api.thumbr.it/whitenoise-358x370.png?background=9dcfcdff&noise=146951&density=42&opacity=14");
+    font-family: "Cinzel";
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    padding: 1%;
+    margin-bottom: 5rem;
+}
+
+.sheet-rollbuttons {
+    font-size: 30px;
+    padding: 10%;
+}
+
+input {
+	font-family: "Cinzel";
+	background: transparent;
+	border-bottom: 2px solid white;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+.sheet-hide {
+	display: none;
+}
+.sheet-mtrack,
+.sheet-htrack {
+	margin-bottom: none;
+}
+.sheet-track ~ label {
+	width: 10px;
+	height: 10px;
+	background: white;
+	border: 1px solid white;
+	display: inline-block;
+	text-align: center;
+	padding-right: 0px;
+	font-size: 8px;
+	padding-bottom: 0px;
+	margin-bottom: -3px;
+	line-height: 11px;
+}
+.sheet-lcol {
+	margin-right: 30px;
+}
+.sheet-rcol {
+	margin-left: 30px;
+}
+/* Trackers */
+.sheet-track[value="1"] ~ label[class*="1"],
+.sheet-track[value="2"] ~ label[class*="2"],
+.sheet-track[value="3"] ~ label[class*="3"],
+.sheet-track[value="4"] ~ label[class*="4"],
+.sheet-track[value="5"] ~ label[class*="5"],
+.sheet-track[value="6"] ~ label[class*="6"],
+.sheet-track[value="7"] ~ label[class*="7"],
+.sheet-track[value="8"] ~ label[class*="8"],
+.sheet-track[value="9"] ~ label[class*="9"],
+.sheet-track[value="a"] ~ label[class*="a"],
+.sheet-track[value="b"] ~ label[class*="b"],
+.sheet-track[value="c"] ~ label[class*="c"] {
+	background-color: #376a69;
+}
+.sheet-gtrackval[value="0"] ~ label[class*="0"],
+.sheet-gtrackval[value="1"] ~ label[class*="1"],
+.sheet-gtrackval[value="2"] ~ label[class*="2"],
+.sheet-gtrackval[value="3"] ~ label[class*="3"],
+.sheet-gtrackval[value="4"] ~ label[class*="4"],
+.sheet-gtrackval[value="5"] ~ label[class*="5"],
+.sheet-gtrackval[value="-1"] ~ label[class*="6"],
+.sheet-gtrackval[value="-2"] ~ label[class*="7"],
+.sheet-gtrackval[value="-3"] ~ label[class*="8"],
+.sheet-gtrackval[value="-4"] ~ label[class*="9"],
+.sheet-gtrackval[value="-5"] ~ label[class*="X"] {
+	color: darkgoldenrod;
+
+}
+.sheet-mcol,.sheet-lcol {
+	display: inline;
+}
+.sheet-htrack {
+	text-align:right;
+}
+.sheet-gtrack {
+	text-align: center;
+}
+.sheet-mtrack:nth-of-type(1) {
+    transform: rotate(-20deg);
+    margin-top: 59px;
+    margin-left: -8px;	
+}
+.sheet-mtrack:nth-of-type(2) {
+	transform: rotate(-10deg);
+    margin-top: 28px;
+}
+.sheet-mtrack:nth-of-type(3) {
+	transform: rotate(10deg);
+    margin-top: 42px;
+}
+.sheet-mtrack:nth-of-type(4) {
+	transform: rotate(20deg);
+    margin-top: 30px;
+    margin-left: -11px;
+}
+.sheet-htrack:nth-of-type(1) {
+    transform: rotate(20deg);
+    margin-top: 59px;
+    margin-right: -8px;	
+}
+.sheet-htrack:nth-of-type(2) {
+	transform: rotate(10deg);
+    margin-top: 28px;
+}
+.sheet-htrack:nth-of-type(3) {
+	transform: rotate(-10deg);
+    margin-top: 42px;
+}
+.sheet-htrack:nth-of-type(4) {
+	transform: rotate(-20deg);
+    margin-top: 30px;
+    margin-right: -11px;
+}
+
+.sheet-emptybox {
+	background-image: url("https://github.com/EtoileLion/roll20-nibiru/blob/master/pro/images/strike.png?raw=true") !important;
+}
+
+.sheet-stype[value="player"] ~ .sheet-journal,
+.sheet-stype[value="journal"] ~ .sheet-player {
+	display: none;
+}
+.sheet-xsmall {
+	font-size: xx-small;
+}
+
+/* Journal CSS */
+
+.sheet-memory {
+	margin-bottom: 30px;
+}
+.sheet-memory textarea {
+	font-family: "Cinzel";
+	line-height: 4ch;
+	border: none;
+	background-image: linear-gradient(transparent, transparent calc(4ch - 1px), #FFFFFF 0px);
+	background-size: 100% 4ch;
+	background-color: rgba(199,199,199,0.3);
+	border: 1px solid #FFFFFF;
+}
+.sheet-noline {
+	border-bottom: none !important;
+	padding: 0px !important;
+	margin-bottom: 0px !important;
+}
+.sheet-smaller {
+		font-size: 15px;
+}
+.sheet-journalheader {
+	height: 81px;
+	background-image: url("https://github.com/EtoileLion/roll20-nibiru/blob/master/pro/images/journalheader.png?raw=true");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-color: rgba(55,106,104,0.3);
+	margin-bottom: 15px;
+}
+.sheet-revelation {
+	width: 70%;
+	margin: 0px auto 0px auto;
+}
+.sheet-revelation p {
+	font-family: "Cinzel";
+	font-weight: bold;
+	margin: 0px;
+	border: none;
+}
+.sheet-revelation input {
+  font-family: "Cinzel";
+  font-weight: bold;
+  color: #376a69;
+  font-size: large;
+}
+.sheet-revelation textarea {
+  font-family: "Cinzel";
+  line-height: 4ch;
+  border: none;
+  font-weight: bold;
+  color: #376a69;
+  background-color: transparent;
+  background-image: linear-gradient(transparent, transparent calc(4ch - 1px), #376a69 0px);
+  background-size: 100% 4ch;
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-normal {
+	width: 100%;
+	background-image: url("http://api.thumbr.it/whitenoise-358x370.png?background=9dcfcfff&noise=146951&density=42&opacity=14");
+}
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-normal {
+	width: 100%;
+	/*background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=9dcfcff&noise=ff0000&density=42&opacity=24");*/	
+	background-image: url("http://api.thumbr.it/whitenoise-358x370.png?background=9dcfcfff&noise=146951&density=42&opacity=14");
+}
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-normal {
+	width: 100%;
+	background-image: url("http://api.thumbr.it/whitenoise-358x370.png?background=9dcfcfff&noise=146951&density=42&opacity=14");
+	/*background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=9dcfcff&noise=fff200&density=33&opacity=24");*/
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-nameline,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-nameline,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-nameline {
+	font-family: "Cinzel";
+	font-weight: bold;
+	background-color: #376a69;
+	color: white;
+	padding: 3px 0px 3px 4px;
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-rollline {
+	text-align: center;
+	font-family: "Cinzel";
+	font-size: x-small;
+	padding: 0px 3px;
+	background-color: midnightblue;
+	color: white;
+}
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-rollline {
+	text-align: center;
+	font-family: "Cinzel";
+	font-size: x-small;
+	padding: 0px 3px;
+	background-color: maroon;
+	color: white;
+}
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-rollline {
+	text-align: center;
+	font-family: "Cinzel";
+	font-size: x-small;
+	padding: 0px 3px;
+	background-color: darkgoldenrod;
+	color: white;
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-byline,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-byline {
+	font-family: "Cinzel";
+	font-size: xx-small;	
+	padding-left: 3px;
+}
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-byline {
+	/*color: white;*/
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-dieline,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-dieline,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-dieline {
+	text-align: center;
+	font-weight: bold;	
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-dieline div,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-dieline div,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-dieline div {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	padding-top: 5px;
+	background-repeat: no-repeat;
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-dieline .sheet-critdie,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-dieline .sheet-critdie,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-dieline .sheet-critdie {
+    background-image: url("https://user-images.githubusercontent.com/83821429/131247771-dbfccbc4-69c6-416c-a230-e3200c0bbecb.png") !important;
+	background-size: contain !important;
+	color: #162;
+	background-repeat: no-repeat;	
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-dieline .sheet-cfaildie,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-dieline .sheet-cfaildie,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-dieline .sheet-cfaildie {
+    background-image: url("https://user-images.githubusercontent.com/83821429/131247770-574819d7-0e0f-48fe-837b-51810e8c8124.png") !important;
+	background-size: contain !important;
+	color: #630505;
+	background-repeat: no-repeat;	
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-dieline .sheet-die1,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-dieline .sheet-die1,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-dieline .sheet-die1 {
+	background-image: url("https://user-images.githubusercontent.com/83821429/131247770-574819d7-0e0f-48fe-837b-51810e8c8124.png");
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-dieline .sheet-die2,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-dieline .sheet-die2,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-dieline .sheet-die2 {
+	background-image: url("https://user-images.githubusercontent.com/83821429/131247580-81de60b7-1bf0-4eb3-b762-5880f4fef132.png");
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-dieline .sheet-die3,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-dieline .sheet-die3,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-dieline .sheet-die3 {
+	background-image: url("https://user-images.githubusercontent.com/83821429/131247580-81de60b7-1bf0-4eb3-b762-5880f4fef132.png");
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-dieline .sheet-die4,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-dieline .sheet-die4,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-dieline .sheet-die4 {
+	background-image: url("https://user-images.githubusercontent.com/83821429/131247771-dbfccbc4-69c6-416c-a230-e3200c0bbecb.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-resultline,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-resultline,
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-resultline {
+	text-align: center;
+	padding-bottom: 3px;
+}
+.sheet-rolltemplate-nibiruspecial .sheet-rolltemplate-resultline,
+.sheet-rolltemplate-nibirucontest .sheet-rolltemplate-resultline {
+	font-weight: bold;
+	font-size: large;
+	font-family: "Cinzel";
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-resultline .sheet-rolltemplate-resultpass {
+	color: #247305;
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-resultline .sheet-rolltemplate-resultfail {
+	color: #730505;
+}
+.sheet-rolltemplate-nibirunormal .sheet-rolltemplate-resultline .sheet-rolltemplate-ruleofthrees {
+	font-family: "Cinzel";
+	font-size: large;
+	color: #286;
+	font-weight: bold;
+}
+.sheet-rolltemplate-quote .sheet-rolltemplate-quoteline {
+	font-family: "Cinzel";
+	color: #376a69;
+	font-weight: bold;
+	font-size: small;
+}
+.sheet-rolltemplate-quote .sheet-rolltemplate-byline {
+	text-align: right;
+	font-size: 0.6rem;
+	font-family: "Cinzel";
+	color: #333;
+}
